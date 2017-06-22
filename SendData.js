@@ -24,6 +24,7 @@ var SendData;
         xhr.addEventListener("readystatechange", handleStateChange);
         xhr.send();
     }
+    //hallo
     function handleStateChange(_event) {
         var xhr = _event.target;
         if (xhr.readyState == XMLHttpRequest.DONE) {

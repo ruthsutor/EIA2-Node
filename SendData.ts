@@ -20,14 +20,13 @@ namespace SendData {
         console.log(style.backgroundColor);
         sendRequest(style.backgroundColor);
     }
-
     function sendRequest(_color: string): void {
         let xhr: XMLHttpRequest = new XMLHttpRequest();
         xhr.open("GET", "https://servertestruth.herokuapp.com?color=" + _color, true);
         xhr.addEventListener("readystatechange", handleStateChange);
         xhr.send();
     }
-
+    //hallo
     function handleStateChange(_event: ProgressEvent): void {
         var xhr: XMLHttpRequest = (<XMLHttpRequest>_event.target);
         if (xhr.readyState == XMLHttpRequest.DONE) {
